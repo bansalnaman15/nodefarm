@@ -12,6 +12,7 @@ Oproduct = Oproduct + "";
 cardfile = cardfile + "";
 
 function replace(id, product) {
+    console.log("replace")
     product = product.replace(/{%PRODUCT NAME%}/g, objlist[id]["productName"])   
     product = product.replace(/{%Description%}/g, objlist[id]["description"])
     product = product.replace(/{%from%}/g, objlist[id]["from"])
